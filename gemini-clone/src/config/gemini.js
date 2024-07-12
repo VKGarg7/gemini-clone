@@ -36,8 +36,9 @@ async function run() {
     history: [],
   });
 
-  const result = await chatSession.sendMessage("INSERT_INPUT_HERE");
-  console.log(result.response);
+  const result = await chatSession.sendMessage("prompt");
+  const response = result.response;
+  console.log(response.text());
 }
 
-run();
+export default run;
