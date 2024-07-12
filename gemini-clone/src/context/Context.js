@@ -1,4 +1,5 @@
 import {createContext} from 'react';
+import run from '../config/gemini';
 
 export const Context = createContext(null);
 
